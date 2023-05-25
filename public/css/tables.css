@@ -1,0 +1,13 @@
+td a {
+  color: var(--white);
+  /*border: 1px solid red;*/
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+td a:hover {
+  text-decoration: underline;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--white);
+}
