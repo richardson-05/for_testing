@@ -1,6 +1,6 @@
 <?php $acive = 2; ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -60,7 +60,7 @@
 					</div>
 					<button class="btn btn-primary" type="submit">Guardar</button>
 
-					<a href="index.php?action=users-view" class="btn_back">Agregar usuario</a>
+					<a href="?action=users-view" class="btn_back">Volver a lista de usuarios</a>
 				</form>
 
 		<?php endforeach;

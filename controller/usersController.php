@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Model/Users.php';
+require_once 'model/Users.php';
 
 class UsersController
 {
@@ -43,7 +43,7 @@ class UsersController
             // Insertar un nuevo producto en la tabla
             $this->model->createUser($nombres, $apellidos, $usuario, $correo, $contrasena);
             //$this->index();
-            header("location: index.php?action=users-view");
+            header("location: ?action=users-view");
         } catch (\Throwable $th) {
             echo ($th->getMessage() . "<br>");
             if (strpos($th->getMessage(), 'usuario')) {
@@ -66,14 +66,14 @@ class UsersController
         // Actualizar un producto en la tabla
         $this->model->actualizar($id, $nombres, $apellidos, $usuario, $correo, $contrasena);
         //$this->index();
-        header("location: index.php?action=users-view");
+        header("location: ?action=users-view");
     }
     
     public function delete($id) {
         // Eliminar un producto de la tabla
         $this->model->eliminar($id);
         //$this->index();
-        header("location: index.php?action=users-view");
+        header("location: ?action=users-view");
     }
 
     /*** Richardson Mercedes ***/

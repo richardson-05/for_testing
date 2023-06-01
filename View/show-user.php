@@ -43,8 +43,8 @@
 								<td><?php echo $producto['correo'] ?></td>
 								<td>*****</td>
 								<td>
-									<a href="index.php?action=edit-user&id=<?php echo $producto['id'] ?>">Editar</a>
-									<a href="index.php?action=delete-user&id=<?php echo $producto['id'] ?>">Eliminar</a>
+									<a href="?action=edit-user&id=<?php echo $producto['id'] ?>">Editar</a>
+									<a href="?action=delete-user&id=<?php echo $producto['id'] ?>">Eliminar</a>
 								</td>
 							</tr>
 					</tbody>
@@ -56,7 +56,7 @@
 				</table>
 			</div>
 
-			<a href="index.php?action=users-view" class="btn_back">Volver a la lista de productos</a>
+			<a href="?action=users-view" class="btn_back">Volver a la lista de usuarios</a>
 	</main>
 
 	<script src="<?php echo (constant("js")) ?>header.js"></script>

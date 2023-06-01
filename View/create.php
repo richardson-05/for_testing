@@ -25,20 +25,20 @@
                     <label for="validationServer01">Nombre</label>
                     <input type="text" class="form-control" id="validationServer01" required placeholder="Producto" name="nombre"> <!-- is-valid -->
                 </div>
-                <div class="form-row">
-                    <div class="col-lg mb-3">
-                        <label for="validationServer03">Descripción</label>
-                        <textarea name="descripcion" id="validationServer03" placeholder="Descripción del producto" require></textarea> <!-- is-valid -->
-                    </div>
-                </div>
                 <div class="col-md-6 mb-3">
                     <label for="validationServer02">Precio</label>
                     <input type="number" class="form-control" id="validationServer02" required placeholder="00.00" name="precio">
                 </div>
             </div>
+            <div class="form-row">
+                <div class="col-lg mb-3">
+                    <label for="validationServer03">Descripción</label>
+                    <textarea name="descripcion" id="validationServer03" placeholder="Descripción del producto" require></textarea> <!-- is-valid -->
+                </div>
+            </div>
             <button class="btn btn-primary" type="submit">Registrar</button>
 
-            <a href="index.php?action=products-view" class="btn_back">Agregar nuevo usuario</a>
+            <a href="?action=products-view" class="btn_back">Volver a lista de productos</a>
         </form>
 
     </main>

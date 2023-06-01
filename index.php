@@ -3,13 +3,13 @@
 //echo "index.php inicial de la app<br>";
 
 // Carga del archivo de configuración de la base de datos
-require_once 'Config/db.php';
-require_once 'Config/config.php';
+require_once 'config/db.php';
+require_once 'config/config.php';
 
 // Carga de los archivos de clases de modelo y controlador
-require_once 'Model/Productos.php';
-require_once 'Controller/ProductosController.php';
-require_once 'Controller/UsersController.php';
+//require_once 'model/Productos.php';
+require_once 'controller/productosController.php';
+require_once 'controller/usersController.php';
 
 // Instanciación del controlador de productos
 $productosController = new ProductosController();
