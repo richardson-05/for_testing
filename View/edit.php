@@ -1,6 +1,6 @@
 <?php $acive = 1; ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -45,7 +45,7 @@
 					</div>
 					<button class="btn btn-primary" type="submit">Guardar</button>
 
-					<a href="index.php?action=products-view" class="btn_back">Agregar nuevo usuario</a>
+					<a href="?action=products-view" class="btn_back">Volver a lista de productos</a>
 				</form>
 		<?php endforeach;
 			//echo count($producto);

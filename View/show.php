@@ -39,8 +39,8 @@
 								<td><?php echo $producto['precio'] ?></td>
 								<td><?php echo $producto['descripcion'] ?></td>
 								<td>
-									<a href="index.php?action=edit&id=<?php echo $producto['id'] ?>">Editar</a>
-									<a href="index.php?action=eliminar&id=<?php echo $producto['id'] ?>">Eliminar</a>
+									<a href="?action=edit&id=<?php echo $producto['id'] ?>">Editar</a>
+									<a href="?action=eliminar&id=<?php echo $producto['id'] ?>">Eliminar</a>
 								</td>
 							</tr>
 					</tbody>
@@ -52,7 +52,7 @@
 				</table>
 			</div>
 
-			<a href="index.php?action=products-view" class="btn_back">Volver a la lista de productos</a>
+			<a href="?action=products-view" class="btn_back">Volver a la lista de productos</a>
 	</main>
 
 	<script src="<?php echo (constant("js")) ?>header.js"></script>

@@ -40,9 +40,9 @@
               <td><?php echo $producto['descripcion'] ?></td>
               <td><?php echo $producto['precio'] ?></td>
               <td>
-                <a href="index.php?action=show&id=<?php echo $producto['id'] ?>">Ver</a>
-                <a href="index.php?action=edit&id=<?php echo $producto['id'] ?>">Editar</a>
-                <a href="index.php?action=eliminar&id=<?php echo $producto['id'] ?>">Eliminar</a>
+                <a href="?action=show&id=<?php echo $producto['id'] ?>">Ver</a>
+                <a href="?action=edit&id=<?php echo $producto['id'] ?>">Editar</a>
+                <a href="?action=eliminar&id=<?php echo $producto['id'] ?>">Eliminar</a>
               </td>
             </tr>
           <?php endforeach ?>
@@ -50,7 +50,7 @@
       </table>
     </div>
 
-    <a href="index.php?action=crear" class="btn_back">Agregar producto</a>
+    <a href="?action=crear" class="btn_back">Agregar producto</a>
   </main>
 
   <script src="<?php echo (constant("js")) ?>header.js"></script>

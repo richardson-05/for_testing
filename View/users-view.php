@@ -44,9 +44,9 @@
               <td><?php echo $usuario['correo'] ?></td>
               <td>*****</td>
               <td>
-                <a href="index.php?action=show-user&id=<?php echo $usuario['id'] ?>">Ver</a>
-                <a href="index.php?action=edit-user&id=<?php echo $usuario['id'] ?>">Editar</a>
-                <a href="index.php?action=delete-user&id=<?php echo $usuario['id'] ?>">Eliminar</a>
+                <a href="?action=show-user&id=<?php echo $usuario['id'] ?>">Ver</a>
+                <a href="?action=edit-user&id=<?php echo $usuario['id'] ?>">Editar</a>
+                <a href="?action=delete-user&id=<?php echo $usuario['id'] ?>">Eliminar</a>
               </td>
             </tr>
           <?php endforeach ?>
@@ -54,7 +54,7 @@
       </table>
     </div>
 
-    <a href="index.php?action=create-user" class="btn_back">Agregar usuario</a>
+    <a href="?action=create-user" class="btn_back">Agregar usuario</a>
   </main>
 
   <script src="<?php echo (constant("js")) ?>header.js"></script>

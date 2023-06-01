@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Model/Productos.php';
+require_once 'model/Productos.php';
 
 class ProductosController {
     private $model;
@@ -37,7 +37,7 @@ class ProductosController {
         // Insertar un nuevo producto en la tabla
         $this->model->guardar($nombre, $descripcion, $precio);
         //$this->index();
-        header("location: index.php?action=products-view");
+        header("location: ?action=products-view");
     }
     
     public function edit($id) { // No se usa - Se usa el update
@@ -50,14 +50,14 @@ class ProductosController {
         // Actualizar un producto en la tabla
         $this->model->actualizar($id, $nombre, $descripcion, $precio);
         //$this->index();
-        header("location: index.php?action=products-view");
+        header("location: ?action=products-view");
     }
     
     public function delete($id) {
         // Eliminar un producto de la tabla
         $this->model->eliminar($id);
         //$this->index();
-        header("location: index.php?action=products-view");
+        header("location: ?action=products-view");
     }
 
     /*** Richardson Mercedes ***/
